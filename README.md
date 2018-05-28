@@ -1,8 +1,8 @@
-## SharePref 自动生成sharepefence方法
+## SharePref 自动生成SharePreference方法
 
 ### 简介
 
-sharePref 是一个能自动生成存储sharePeference 一系列方法的库，方便程序员开发，减少模板型代码浪费大量时间。
+sharePref 是一个能自动生成存储SharePreference 一系列方法的库，方便程序员开发，减少模板型代码浪费大量时间。
 
 ### 使用步骤
 
