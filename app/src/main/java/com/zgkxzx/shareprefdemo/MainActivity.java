@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
         StudentSDO.putAddress(this,"shenZhen");
 
+        StudentSDO.putAddress(this,"wuhan","123");
+
         String address = StudentSDO.getAddress(this);
 
 
