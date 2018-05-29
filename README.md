@@ -14,7 +14,7 @@
 
 #### 1.添加arr库到app gradle
 
-	compile files('libs/sharePref-1.0.jar')
+	compile(name: 'sharepref-release', ext: 'aar')
 
 #### 2.把需要存储类的字段加上注解
 
