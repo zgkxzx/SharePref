@@ -48,7 +48,7 @@
 自动生成工具类Java文件
 
 
-<img src="https://github.com/zgkxzx/SharePref/blob/master/screenshot/4.png" width = "1324" height = "632" alt="截屏" align=center />
+<img src="https://github.com/zgkxzx/SharePref/blob/master/screenshot/4.png" width = "1324" height = "600" alt="截屏" align=center />
 
 
 
