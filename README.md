@@ -48,7 +48,7 @@
 自动生成工具类Java文件
 
 
-<img src="https://github.com/zgkxzx/SharePref/blob/master/screenshot/4.png" width = "1324" height = "600" alt="截屏" align=center />
+<img src="https://github.com/zgkxzx/SharePref/blob/master/screenshot/4.png" width = "1324" height = "500" alt="截屏" align=center />
 
 
 
@@ -91,7 +91,7 @@
 
 - 生成的键值名
 
-        _类名_变量名_{后缀标签}
+        _类名_变量名{_后缀标签}
 
 
     例如：Student类的name成员变量，默认情况下，在SharePeference的存储键值是_student_name
