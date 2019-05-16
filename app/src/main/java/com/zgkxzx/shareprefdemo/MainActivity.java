@@ -2,7 +2,10 @@ package com.zgkxzx.shareprefdemo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+
+import com.fcbox.lib.pay.utils.LogUtil;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
         Teacher teacher = TeacherSDO.get(this);
 
         tvContent.setText(address+" --- "+teacher.toString());
+
+        tvContent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                LogUtil.d("fadsfasd");
+            }
+        });
 
 
     }

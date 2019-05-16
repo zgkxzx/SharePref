@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://E:\studiowork\MyProject\SharePrefDemo\SharePref.iml" filepath="E:\studiowork\MyProject\SharePrefDemo\SharePref.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SharePrefDemo.iml" filepath="$PROJECT_DIR$/SharePrefDemo.iml" />
-      <module fileurl="file://G:\Workspaces\SharePref\SharePrefDemo.iml" filepath="G:\Workspaces\SharePref\SharePrefDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SharePref.iml" filepath="$PROJECT_DIR$/SharePref.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxPay/WxPay.iml" filepath="$PROJECT_DIR$/WxPay/WxPay.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://G:\Workspaces\SharePref\app\app.iml" filepath="G:\Workspaces\SharePref\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharePrefProcess/sharePrefProcess.iml" filepath="$PROJECT_DIR$/sharePrefProcess/sharePrefProcess.iml" />
-      <module fileurl="file://G:\Workspaces\SharePref\sharePrefProcess\sharePrefProcess.iml" filepath="G:\Workspaces\SharePref\sharePrefProcess\sharePrefProcess.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharepref/sharepref.iml" filepath="$PROJECT_DIR$/sharepref/sharepref.iml" />
-      <module fileurl="file://G:\Workspaces\SharePref\sharepref\sharepref.iml" filepath="G:\Workspaces\SharePref\sharepref\sharepref.iml" />
     </modules>
   </component>
 </project>

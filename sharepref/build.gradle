@@ -30,7 +30,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.0.0'
     testCompile 'junit:junit:4.12'
-    //compile project(':sharePrefProcess')
+    compile project(':sharePrefProcess')
     //compile project('libs/sharePrefProcess.jar')
-    compile files('libs/sharePrefProcess.jar')
+    //compile files('libs/sharePrefProcess.jar')
 }

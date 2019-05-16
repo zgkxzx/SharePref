@@ -1,6 +1,7 @@
 package com.zgkxzx.shareprefprocess;
 
 import com.google.auto.service.AutoService;
+import com.squareup.javapoet.JavaFile;
 
 import java.io.IOException;
 import java.io.Writer;
@@ -36,7 +37,6 @@ public class SPrefProcessor extends AbstractProcessor {
 
     private Messager messager;
     private Elements elementUtils;
-
     private String newClassName;
 
     @Override
@@ -51,12 +51,23 @@ public class SPrefProcessor extends AbstractProcessor {
     public Set<String> getSupportedAnnotationTypes() {
         Set<String> types = new LinkedHashSet<>();
         types.add(SharePref.class.getCanonicalName());
+        types.add(Table.class.getCanonicalName());
         return types;
     }
 
     @Override
     public boolean process(Set<? extends TypeElement> set, RoundEnvironment roundEnvironment) {
+        System.out.print(roundEnvironment);
+        Set<? extends Element> elementsAnnotatedWith = roundEnvironment.getElementsAnnotatedWith(Table.class);
+        for (Element element : elementsAnnotatedWith) {
+            TypeElement typeElement = (TypeElement) element
+                    .getEnclosingElement();
 
+            VariableElement variableElement = (VariableElement) element;
+            String fullClassName = typeElement.getQualifiedName().toString();
+            String className = typeElement.getSimpleName().toString();
+
+        }
         for (Element element : roundEnvironment.getElementsAnnotatedWith(SharePref.class)) {
             //target相同只能强转。不同使用getEnclosingElement
             //ExecutableElement executableElement = (ExecutableElement) element;
@@ -100,6 +111,7 @@ public class SPrefProcessor extends AbstractProcessor {
             writer.write(contect);
             writer.flush();
             writer.close();
+
         } catch (IOException e) {
 //            error(typeElement,
 //                    "Unable to write injector for type %s: %s",
@@ -109,6 +121,8 @@ public class SPrefProcessor extends AbstractProcessor {
 //                    "The use of irregular %s: %s",
 //                    typeElement, e.getMessage());
         }
+
+
     }
 
     /**

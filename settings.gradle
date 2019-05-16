@@ -1,1 +1,1 @@
-include ':app', ':sharepref', ':sharePrefProcess'
+include ':app', ':sharepref', ':sharePrefProcess', ':WxPay'

@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.squareup:javapoet:1.8.0'
+    compile 'com.google.auto.service:auto-service:1.0-rc2'
+    /*compile files('src/main/libs/auto-service-1.0-rc2.jar')
+    compile files('src/main/libs/javapoet-1.8.0.jar')
+    compile files('src/main/libs/auto-common-0.3.jar')
+    compile files('src/main/libs/javawriter-2.1.1.jar')
+    compile files('src/main/libs/guava-18.0.jar')*/
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

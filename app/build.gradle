@@ -35,8 +35,12 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.0.0'
     testCompile 'junit:junit:4.12'
+
+    compile(name: 'pay-release', ext: 'aar')
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.1.6'
     compile project(':sharepref')
     //compile project(':sharePrefProcess')
+    // compile(name: 'sharepref-release', ext: 'aar')
+    //compile project(':WxPay')
 
-   // compile(name: 'sharepref-release', ext: 'aar')
 }
